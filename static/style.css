@@ -1,0 +1,148 @@
+/* Estilos generales */
+* {
+    color: #eceff1;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .body {
+    background-color: #1b3039;
+  }
+  
+  /* Contenedor principal */
+  .flex-container {
+    background-color: #1b3039;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Encabezado */
+  .header {
+    padding: 20px;
+    margin: 5px;
+    flex-basis: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header h1 {
+    font-size: 35px;
+  }
+  
+  .img img {
+    width: 58px;
+  }
+  
+  /* Contenido principal */
+  .main {
+    padding: 20px;
+    margin: 5px;
+    background-color: #1b3039;
+    flex-basis: 200px;
+    flex-grow: 2;
+  }
+  
+  .main__nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main__li {
+    user-select: none;
+    display: inline-block;
+    padding: 20px;
+    background-color: #889;
+    opacity: .6;
+    border-radius: 50px;
+    border: none;
+    width: 50%;
+    font-size: 19px;
+    text-align: center;
+    margin: 8px 10px;
+    font-weight: 100;
+    transition: .8s;
+  }
+
+  .main__li:hover {
+    background-color: #bbb;
+    color: #fff;
+    transform: scale(1.15);
+  }
+  
+  .main h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Barra lateral */
+  .aside {
+    padding: 20px;
+    margin: 5px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    margin: 5px;
+  
+  }
+
+  .footer p {
+    font-size: 10px;
+    float: right;
+  }
+
+  
+
+
+
+
+
+  @media only screen and  (min-width: 700px) {
+
+    .header h1 {
+        font-size: 80px;
+
+    
+    }
+    .main__nav {
+        flex-direction: row;
+        justify-content: center;
+      }
+    .main {
+        margin-top: 10px;
+    }
+    .main h4 {
+        font-size: 43px;
+    }
+    .main__li {
+ 
+        width: 34%;
+        font-size: 25px;
+        height: 100px;
+        padding: 30px;
+    }
+
+    .main__li:hover {
+        transform: scale(1.105);
+        cursor: pointer;
+    }
+
+    .img {
+        align-self: center;
+        margin-right: 20px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .img img {
+        height: 100px;
+        width: 100px;
+    }
+  }

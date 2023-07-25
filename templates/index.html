@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+   
+    <script src="{{ url_for('static', filename = 'main.js')}}"></script>
+</head>
+<body class="body">
+
+    <div class="flex-container">
+        <header class="header">
+            <div class="img">
+                <a href="/">
+                    <img src="{{ url_for('static', filename = 'icon.png')}}" alt="">
+                </a>
+   
+            </div>
+            <h1>Color Picker</h1>
+
+
+        </header>
+        <article class="main">
+            <h4>This Hex-Value color is: </h4>
+            <nav class="main__nav">
+                <button class="main__li primary" >Primary Color</button>
+                <button class="main__li second">Secondary Color</button>
+                <button class="main__li third">Thertiary Color</button>
+                <button class="main__li hex">HEX Color</button>
+            </nav>
+        </article>
+        <aside class="aside">
+
+        </aside>
+       
+            <footer class="footer" >
+    
+                  <p>&copy; 2023    JD Color Flipper Web. Todos los derechos reservados.</p>
+                
+
+              </footer>
+              
+       
+    </div>
+    
+</body>
+</html>
